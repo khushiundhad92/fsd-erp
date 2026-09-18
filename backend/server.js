@@ -155,20 +155,20 @@ app.use(
 // ATTENDANCE
 // ======================================================
 
-app.use(
-  "/api/attendance",
-  require("./routes/attendanceRoutes")
-);
+// app.use(
+//   "/api/attendance",
+//   require("./routes/attendanceRoutes")
+// );
 
 
 // ======================================================
 // LEAVE
 // ======================================================
 
-app.use(
-  "/api/leaves",
-  require("./routes/leaveRoutes")
-);
+// app.use(
+//   "/api/leaves",
+//   require("./routes/leaveRoutes")
+// );
 
 
 // ======================================================

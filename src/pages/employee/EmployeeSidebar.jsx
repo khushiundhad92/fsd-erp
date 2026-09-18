@@ -2,8 +2,6 @@ import {
   FaUserTie,
   FaTachometerAlt,
   FaBriefcase,
-  FaCalendarCheck,
-  FaCalendarAlt,
   FaMoneyBillWave,
   FaUser,
   FaHeadset,
@@ -32,16 +30,8 @@ const EmployeeSidebar = ({ isOpen }) => {
       path: "/employee/work",
       icon: <FaBriefcase />,
     },
-    {
-      name: "Attendance",
-      path: "/employee/attendance",
-      icon: <FaCalendarCheck />,
-    },
-    {
-      name: "Leave",
-      path: "/employee/leave",
-      icon: <FaCalendarAlt />,
-    },
+    
+    
     {
       name: "Salary",
       path: "/employee/salary",
