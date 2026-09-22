@@ -20,7 +20,7 @@ import {
   updateCustomerCartQuantity,
   removeCustomerCartItem,
   checkoutCustomerOrder,
-} from "../../api/customerApi";
+} from "../../services/api";
 
 import "./CustomerOrders.css";
 

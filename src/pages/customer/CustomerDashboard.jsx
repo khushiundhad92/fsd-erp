@@ -24,7 +24,7 @@ import {
   getCustomerDashboard,
   getCustomerOrders,
   getCustomerPayments,
-} from "../../api/customerApi";
+} from "../../services/api";
 
 import "./CustomerDashboard.css";
 

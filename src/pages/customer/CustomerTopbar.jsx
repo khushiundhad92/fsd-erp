@@ -6,7 +6,7 @@ import {
   FaShoppingCart,
 } from "react-icons/fa";
 
-import { getCustomerCart } from "../../api/customerApi";
+import { getCustomerCart } from "../../services/api";
 import "./CustomerTopbar.css";
 
 const CustomerTopbar = ({

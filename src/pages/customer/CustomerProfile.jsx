@@ -13,7 +13,7 @@ import {
 import {
   getCustomerProfile,
   updateCustomerProfile,
-} from "../../api/customerApi";
+} from "../../services/api";
 
 import "./CustomerProfile.css";
 

@@ -16,7 +16,7 @@ import {
 import {
   getCustomerPayments,
   createCustomerPayment,
-} from "../../api/customerApi";
+} from "../../services/api";
 
 import "./CustomerPayments.css";
 

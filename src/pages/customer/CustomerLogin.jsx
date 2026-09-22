@@ -13,7 +13,7 @@ import {
 
 import "./CustomerLogin.css";
 
-import { loginCustomer } from "../../api/customerApi";
+import { loginCustomer } from "../../services/api";
 
 const CustomerLogin = () => {
   const navigate = useNavigate();

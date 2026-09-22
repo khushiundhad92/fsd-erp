@@ -11,7 +11,7 @@ import {
   getCustomerProducts,
   addToCustomerCart,
   getCustomerCart,
-} from "../../api/customerApi";
+} from "../../services/api";
 
 import "./CustomerProducts.css";
 

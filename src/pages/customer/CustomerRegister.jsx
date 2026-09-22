@@ -4,7 +4,7 @@ import {
   useNavigate,
 } from "react-router-dom";
 
-import { registerCustomer } from "../../api/customerApi";
+import { registerCustomer } from "../../services/api";
 
 import "./CustomerRegister.css";
 
