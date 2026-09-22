@@ -219,7 +219,7 @@
 
 .employee-nav-link:hover .employee-nav-icon,
 .employee-nav-link.active .employee-nav-icon {
-  color: #16834a;
+  color: #1b5e20;
 }
 
 
@@ -294,8 +294,8 @@
 
   border-radius: 8px;
 
-  background: #e7f8ee;
-  color: #16834a;
+  background: #e8f5e9;
+  color: #2e7d32;
 }
 
 
@@ -432,7 +432,7 @@
   }
 
   .employee-sidebar-closed .employee-nav-link.active {
-    box-shadow: inset 3px 0 0 #16834a;
+    box-shadow: inset 3px 0 0 #a5d6a7;
   }
 
 

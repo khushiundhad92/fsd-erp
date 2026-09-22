@@ -267,7 +267,7 @@
 
   border-radius: 9px;
 
-  background: #16834a;
+  background: #2e7d32;
 
   color: #ffffff;
 
@@ -284,10 +284,10 @@
 }
 
 .employee-login-button:hover {
-  background: #116b3a;
+  background: #1b5e20;
 
   box-shadow:
-    0 4px 12px rgba(22, 131, 74, 0.25);
+    0 4px 12px rgba(46, 125, 50, 0.25);
 
   transform: translateY(-1px);
 }
