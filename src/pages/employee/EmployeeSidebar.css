@@ -14,9 +14,10 @@
   display: flex;
   flex-direction: column;
 
-  background: #ffffff;
+  background: #1b5e20;
+  color: white;
 
-  border-right: 1px solid #e2e8e5;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
 
   transition:
     width 0.25s ease,
@@ -24,7 +25,7 @@
 
   overflow: hidden;
 
-  box-shadow: 3px 0 15px rgba(22, 131, 74, 0.05);
+  box-shadow: 3px 0 15px rgba(27, 94, 32, 0.15);
 }
 
 
@@ -50,37 +51,35 @@
 
   padding: 0 18px;
 
-  border-bottom: 1px solid #edf1ef;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 
-  background: #ffffff;
+  background: #1b5e20;
 }
 
 
 /* LOGO ICON */
 
 .employee-logo-icon {
-  min-width: 42px;
-  width: 42px;
-  height: 42px;
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 12px;
+  border-radius: 10px;
 
-  background: #16834a;
+  background: #43a047;
   color: #ffffff;
 
-  font-size: 20px;
-
-  box-shadow: 0 4px 10px rgba(22, 131, 74, 0.20);
+  font-size: 22px;
 
   transition: 0.25s ease;
 }
 
 .employee-logo-icon:hover {
-  background: #116b36;
+  background: #388e3c;
   transform: scale(1.04);
 }
 
@@ -95,18 +94,19 @@
 }
 
 .employee-logo-text strong {
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 700;
 
-  color: #123c28;
+  color: #ffffff;
 }
 
 .employee-logo-text span {
-  margin-top: 2px;
+  margin-top: 3px;
 
-  font-size: 11px;
+  font-size: 9px;
 
-  color: #718096;
+  color: #c8e6c9;
+  letter-spacing: 1.5px;
 }
 
 
@@ -141,12 +141,12 @@
 }
 
 .employee-sidebar-nav::-webkit-scrollbar-thumb {
-  background: #cfe5d8;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
 }
 
 .employee-sidebar-nav::-webkit-scrollbar-thumb:hover {
-  background: #9bc9ad;
+  background: rgba(255, 255, 255, 0.35);
 }
 
 
@@ -165,13 +165,13 @@
 
   padding: 0 14px;
 
-  border-radius: 10px;
+  border-radius: 9px;
 
-  color: #64748b;
+  color: #e8f5e9;
 
   text-decoration: none;
 
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
 
   transition:
@@ -184,8 +184,8 @@
 /* HOVER */
 
 .employee-nav-link:hover {
-  background: #f0fdf4;
-  color: #16834a;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
 
   transform: translateX(2px);
 }
@@ -194,13 +194,10 @@
 /* ACTIVE */
 
 .employee-nav-link.active {
-  background: #e7f8ee;
-  color: #16834a;
+  background: #a5d6a7;
+  color: #1b5e20;
 
-  font-weight: 600;
-
-  box-shadow:
-    inset 3px 0 0 #16834a;
+  font-weight: 700;
 }
 
 

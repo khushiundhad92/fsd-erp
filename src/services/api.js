@@ -427,6 +427,13 @@ export const getWork = async () => {
   );
 };
 
+export const getMyWork = async () => {
+  const token = localStorage.getItem("employeeToken");
+  return await apiRequest(`${API_BASE_URL}/work/my-work`, {
+    headers: token ? { Authorization: `Bearer ${token}` } : {},
+  });
+};
+
 export const addWork = async (workData) => {
   return await apiRequest(
     `${API_BASE_URL}/work`,
@@ -448,6 +455,15 @@ export const updateWork = async (
       body: JSON.stringify(workData),
     }
   );
+};
+
+export const updateWorkStatus = async (id, status) => {
+  const token = localStorage.getItem("employeeToken");
+  return await apiRequest(`${API_BASE_URL}/work/${id}/status`, {
+    method: "PATCH",
+    headers: token ? { Authorization: `Bearer ${token}` } : {},
+    body: JSON.stringify({ status }),
+  });
 };
 
 export const deleteWork = async (id) => {

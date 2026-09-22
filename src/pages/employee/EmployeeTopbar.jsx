@@ -70,7 +70,7 @@ const EmployeeTopbar = ({ onMenuClick }) => {
       return "My Profile";
     }
 
-    return "Employee Panel";
+    return "Employee Dashboard";
   };
 
   // =========================

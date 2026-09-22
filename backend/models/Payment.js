@@ -8,10 +8,35 @@ const paymentSchema = new mongoose.Schema(
       trim: true,
     },
 
+    orderId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Order",
+    },
+
+    orderNo: {
+      type: String,
+      default: "",
+    },
+
+    customerId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "CustomerAccount",
+    },
+
     customer: {
       type: String,
       required: true,
       trim: true,
+    },
+
+    customerName: {
+      type: String,
+      default: "",
+    },
+
+    customerEmail: {
+      type: String,
+      default: "",
     },
 
     amount: {
@@ -22,7 +47,12 @@ const paymentSchema = new mongoose.Schema(
 
     paymentMethod: {
       type: String,
-      default: "Cash",
+      default: "Cash on Delivery",
+    },
+
+    transactionId: {
+      type: String,
+      default: "",
     },
 
     date: {
@@ -30,9 +60,15 @@ const paymentSchema = new mongoose.Schema(
       required: true,
     },
 
+    paymentDate: {
+      type: Date,
+      default: Date.now,
+    },
+
     status: {
       type: String,
-      default: "Completed",
+      default: "Successful",
+      enum: ["Successful", "Pending", "Failed"],
     },
 
     notes: {

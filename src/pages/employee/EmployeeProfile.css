@@ -1,5 +1,6 @@
 /* =========================================================
    EMPLOYEE PROFILE PAGE
+   ADMIN DASHBOARD GREEN THEME (#1b5e20, #2e7d32, #e8f5e9)
 ========================================================= */
 
 .employee-profile-page {
@@ -24,7 +25,7 @@
 .employee-profile-header h1 {
   margin: 0;
 
-  color: #173d29;
+  color: #1b5e20;
 
   font-size: 30px;
   font-weight: 700;
@@ -33,7 +34,7 @@
 .employee-profile-header p {
   margin: 7px 0 0;
 
-  color: #718096;
+  color: #689f6b;
 
   font-size: 14px;
 }
@@ -68,12 +69,12 @@
 }
 
 .profile-edit-btn {
-  background: #16834a;
+  background: #2e7d32;
   color: #ffffff;
 }
 
 .profile-edit-btn:hover {
-  background: #126b3c;
+  background: #1b5e20;
   transform: translateY(-1px);
 }
 
@@ -83,12 +84,12 @@
 }
 
 .profile-save-btn {
-  background: #16834a;
+  background: #2e7d32;
   color: #ffffff;
 }
 
 .profile-save-btn:hover {
-  background: #126b3c;
+  background: #1b5e20;
 }
 
 .profile-cancel-btn {
@@ -108,13 +109,13 @@
 .employee-profile-card {
   background: #ffffff;
 
-  border: 1px solid #e2e8e5;
+  border: 1px solid #c8e6c9;
 
   border-radius: 16px;
 
   overflow: hidden;
 
-  box-shadow: 0 5px 20px rgba(22, 131, 74, 0.04);
+  box-shadow: 0 5px 20px rgba(27, 94, 32, 0.05);
 }
 
 
@@ -130,11 +131,11 @@
 
   background: linear-gradient(
     135deg,
-    #f0fdf4,
+    #e8f5e9,
     #ffffff
   );
 
-  border-bottom: 1px solid #e5eee9;
+  border-bottom: 1px solid #c8e6c9;
 }
 
 .employee-profile-avatar {
@@ -147,9 +148,9 @@
 
   border-radius: 50%;
 
-  background: #dcfce7;
+  background: #e8f5e9;
 
-  color: #16834a;
+  color: #1b5e20;
 
   font-size: 72px;
 
@@ -166,7 +167,7 @@
 .employee-profile-name h2 {
   margin: 0;
 
-  color: #173d29;
+  color: #1b5e20;
 
   font-size: 24px;
 }
@@ -174,7 +175,7 @@
 .employee-profile-name span {
   margin-top: 5px;
 
-  color: #16834a;
+  color: #2e7d32;
 
   font-size: 14px;
 
@@ -184,7 +185,7 @@
 .employee-profile-name small {
   margin-top: 6px;
 
-  color: #718096;
+  color: #689f6b;
 
   font-size: 12px;
 }
@@ -197,7 +198,7 @@
 .employee-profile-section {
   padding: 28px 30px;
 
-  border-bottom: 1px solid #edf1ef;
+  border-bottom: 1px solid #e8f5e9;
 }
 
 .profile-section-title {
@@ -207,7 +208,7 @@
 .profile-section-title h2 {
   margin: 0;
 
-  color: #183d2a;
+  color: #1b5e20;
 
   font-size: 19px;
 }
@@ -215,7 +216,7 @@
 .profile-section-title p {
   margin: 5px 0 0;
 
-  color: #87949a;
+  color: #689f6b;
 
   font-size: 13px;
 }
@@ -251,7 +252,7 @@
 
   margin-bottom: 8px;
 
-  color: #64746c;
+  color: #1b5e20;
 
   font-size: 13px;
 
@@ -259,7 +260,7 @@
 }
 
 .profile-field label svg {
-  color: #16834a;
+  color: #2e7d32;
 }
 
 
@@ -275,13 +276,13 @@
 
   padding: 0 14px;
 
-  background: #f8faf9;
+  background: #f4fbf5;
 
-  border: 1px solid #e2e8e5;
+  border: 1px solid #c8e6c9;
 
   border-radius: 9px;
 
-  color: #344054;
+  color: #37474f;
 
   font-size: 14px;
 }
@@ -297,7 +298,7 @@
 
   padding: 0 14px;
 
-  border: 1px solid #d5e2dc;
+  border: 1px solid #c8e6c9;
 
   border-radius: 9px;
 
@@ -305,7 +306,7 @@
 
   background: #ffffff;
 
-  color: #344054;
+  color: #37474f;
 
   font-size: 14px;
 
@@ -313,10 +314,10 @@
 }
 
 .profile-field input:focus {
-  border-color: #16834a;
+  border-color: #2e7d32;
 
   box-shadow:
-    0 0 0 3px rgba(22, 131, 74, 0.10);
+    0 0 0 3px rgba(46, 125, 50, 0.12);
 }
 
 
@@ -334,9 +335,9 @@
 
   gap: 13px;
 
-  background: #f0fdf4;
+  background: #e8f5e9;
 
-  border: 1px solid #dcfce7;
+  border: 1px solid #c8e6c9;
 
   border-radius: 11px;
 }
@@ -351,9 +352,9 @@
 
   border-radius: 9px;
 
-  background: #dcfce7;
+  background: #c8e6c9;
 
-  color: #16834a;
+  color: #1b5e20;
 
   font-size: 20px;
 
@@ -361,7 +362,7 @@
 }
 
 .profile-status-box strong {
-  color: #183d2a;
+  color: #1b5e20;
 
   font-size: 14px;
 }
@@ -369,7 +370,7 @@
 .profile-status-box p {
   margin: 3px 0 0;
 
-  color: #718096;
+  color: #689f6b;
 
   font-size: 12px;
 }
@@ -381,9 +382,9 @@
 
   border-radius: 20px;
 
-  background: #dcfce7;
+  background: #e8f5e9;
 
-  color: #16834a;
+  color: #1b5e20;
 
   font-size: 12px;
 

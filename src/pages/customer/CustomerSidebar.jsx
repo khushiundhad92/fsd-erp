@@ -1,4 +1,13 @@
 import { NavLink, useNavigate } from "react-router-dom";
+import {
+  FaTachometerAlt,
+  FaBoxes,
+  FaBox,
+  FaCreditCard,
+  FaUser,
+  FaSignOutAlt,
+} from "react-icons/fa";
+import { GiCow } from "react-icons/gi";
 
 import "./CustomerSidebar.css";
 
@@ -50,7 +59,7 @@ const CustomerSidebar = ({ isOpen, onClose }) => {
       <div className="customer-sidebar-logo">
 
         <div className="customer-logo-icon">
-          🐄
+          <GiCow />
         </div>
 
         <div className="customer-logo-text">
@@ -60,7 +69,7 @@ const CustomerSidebar = ({ isOpen, onClose }) => {
           </strong>
 
           <span>
-            Customer Panel
+            ERP System
           </span>
 
         </div>
@@ -86,7 +95,7 @@ const CustomerSidebar = ({ isOpen, onClose }) => {
         >
 
           <span className="customer-nav-icon">
-            🏠
+            <FaTachometerAlt />
           </span>
 
           <span className="customer-nav-text">
@@ -107,7 +116,7 @@ const CustomerSidebar = ({ isOpen, onClose }) => {
         >
 
           <span className="customer-nav-icon">
-            🥛
+            <FaBoxes />
           </span>
 
           <span className="customer-nav-text">
@@ -128,7 +137,7 @@ const CustomerSidebar = ({ isOpen, onClose }) => {
         >
 
           <span className="customer-nav-icon">
-            📦
+            <FaBox />
           </span>
 
           <span className="customer-nav-text">
@@ -137,8 +146,6 @@ const CustomerSidebar = ({ isOpen, onClose }) => {
 
         </NavLink>
 
-
-        
 
         <NavLink
           to="/customer/payments"
@@ -151,7 +158,7 @@ const CustomerSidebar = ({ isOpen, onClose }) => {
         >
 
           <span className="customer-nav-icon">
-            💳
+            <FaCreditCard />
           </span>
 
           <span className="customer-nav-text">
@@ -172,7 +179,7 @@ const CustomerSidebar = ({ isOpen, onClose }) => {
         >
 
           <span className="customer-nav-icon">
-            👤
+            <FaUser />
           </span>
 
           <span className="customer-nav-text">
@@ -190,35 +197,14 @@ const CustomerSidebar = ({ isOpen, onClose }) => {
 
       <div className="customer-sidebar-footer">
 
-        <div className="customer-support-box">
-
-          <span className="support-icon">
-            💬
-          </span>
-
-          <div>
-
-            <strong>
-              Need Help?
-            </strong>
-
-            <span>
-              Contact support
-            </span>
-
-          </div>
-
-        </div>
-
-
         <button
           type="button"
           className="customer-logout-button"
           onClick={handleLogout}
         >
 
-          <span>
-            🚪
+          <span className="customer-nav-icon">
+            <FaSignOutAlt />
           </span>
 
           Logout

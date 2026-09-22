@@ -1,6 +1,6 @@
 /* =========================================================
    EMPLOYEE DASHBOARD
-   DAIRY FARM GREEN THEME
+   ADMIN DASHBOARD GREEN THEME (#1b5e20, #2e7d32, #e8f5e9)
 ========================================================= */
 
 .employee-dashboard {
@@ -26,7 +26,7 @@
 .dashboard-title h1 {
   margin: 0;
 
-  color: #123d28;
+  color: #1b5e20;
 
   font-size: 30px;
   font-weight: 700;
@@ -35,7 +35,7 @@
 .dashboard-title p {
   margin: 7px 0 0;
 
-  color: #718096;
+  color: #689f6b;
 
   font-size: 14px;
 }
@@ -48,17 +48,17 @@
 
   background: #ffffff;
 
-  border: 1px solid #dfe9e3;
+  border: 1px solid #c8e6c9;
 
   border-radius: 10px;
 
   text-align: center;
 
-  box-shadow: 0 3px 12px rgba(22, 131, 74, 0.05);
+  box-shadow: 0 3px 12px rgba(27, 94, 32, 0.06);
 }
 
 .dashboard-date span {
-  color: #94a3a0;
+  color: #689f6b;
 
   font-size: 11px;
 }
@@ -66,7 +66,7 @@
 .dashboard-date strong {
   margin-top: 4px;
 
-  color: #16834a;
+  color: #1b5e20;
 
   font-size: 13px;
 }
@@ -100,11 +100,11 @@
 
   background: #ffffff;
 
-  border: 1px solid #e1e9e5;
+  border: 1px solid #c8e6c9;
 
   border-radius: 15px;
 
-  box-shadow: 0 5px 18px rgba(22, 131, 74, 0.05);
+  box-shadow: 0 5px 18px rgba(27, 94, 32, 0.06);
 
   transition: all 0.25s ease;
 
@@ -124,15 +124,15 @@
 
   border-radius: 50%;
 
-  background: #f0fdf4;
+  background: #e8f5e9;
 }
 
 .dashboard-card:hover {
   transform: translateY(-4px);
 
-  border-color: #b9dfca;
+  border-color: #a5d6a7;
 
-  box-shadow: 0 10px 25px rgba(22, 131, 74, 0.10);
+  box-shadow: 0 10px 25px rgba(27, 94, 32, 0.12);
 }
 
 
@@ -150,9 +150,9 @@
 
   border-radius: 13px;
 
-  background: #e4f8ec;
+  background: #e8f5e9;
 
-  color: #16834a;
+  color: #1b5e20;
 
   font-size: 21px;
 }
@@ -166,7 +166,7 @@
 }
 
 .dashboard-card-content > span {
-  color: #718096;
+  color: #689f6b;
 
   font-size: 13px;
 }
@@ -174,7 +174,7 @@
 .dashboard-card-content h3 {
   margin: 4px 0;
 
-  color: #163d29;
+  color: #1b5e20;
 
   font-size: 23px;
 }
@@ -185,7 +185,7 @@
 
   gap: 5px;
 
-  color: #16834a;
+  color: #2e7d32;
 
   font-size: 11px;
 }
@@ -210,11 +210,11 @@
 
   background: #ffffff;
 
-  border: 1px solid #e1e9e5;
+  border: 1px solid #c8e6c9;
 
   border-radius: 15px;
 
-  box-shadow: 0 4px 15px rgba(22, 131, 74, 0.04);
+  box-shadow: 0 4px 15px rgba(27, 94, 32, 0.05);
 }
 
 .small-card-header {
@@ -237,9 +237,9 @@
 
   border-radius: 11px;
 
-  background: #e4f8ec;
+  background: #e8f5e9;
 
-  color: #16834a;
+  color: #1b5e20;
 
   font-size: 17px;
 }
@@ -247,7 +247,7 @@
 .dashboard-small-card h3 {
   margin: 0 0 15px;
 
-  color: #183d2a;
+  color: #1b5e20;
 
   font-size: 16px;
 }
@@ -266,8 +266,8 @@
 }
 
 .dashboard-badge.success {
-  background: #dcfce7;
-  color: #16834a;
+  background: #e8f5e9;
+  color: #1b5e20;
 }
 
 .dashboard-badge.info {
@@ -297,7 +297,7 @@
 }
 
 .attendance-time span {
-  color: #94a3a0;
+  color: #689f6b;
 
   font-size: 11px;
 }
@@ -305,7 +305,7 @@
 .attendance-time strong {
   margin-top: 5px;
 
-  color: #1f2937;
+  color: #1b5e20;
 
   font-size: 15px;
 }
@@ -324,13 +324,13 @@
 }
 
 .working-hours strong {
-  color: #163d29;
+  color: #1b5e20;
 
   font-size: 22px;
 }
 
 .working-hours span {
-  color: #94a3a0;
+  color: #689f6b;
 
   font-size: 12px;
 }
@@ -344,7 +344,7 @@
 
   margin-top: 12px;
 
-  background: #e9f3ed;
+  background: #e8f5e9;
 
   border-radius: 20px;
 
@@ -354,7 +354,7 @@
 .progress-fill {
   height: 100%;
 
-  background: #16834a;
+  background: #2e7d32;
 
   border-radius: 20px;
 
@@ -373,7 +373,7 @@
 }
 
 .leave-balance strong {
-  color: #163d29;
+  color: #1b5e20;
 
   font-size: 23px;
 }
@@ -381,7 +381,7 @@
 .leave-balance span {
   margin-top: 3px;
 
-  color: #94a3a0;
+  color: #689f6b;
 
   font-size: 12px;
 }
@@ -410,13 +410,13 @@
 .dashboard-quick-section {
   background: #ffffff;
 
-  border: 1px solid #e1e9e5;
+  border: 1px solid #c8e6c9;
 
   border-radius: 16px;
 
   padding: 24px;
 
-  box-shadow: 0 4px 15px rgba(22, 131, 74, 0.04);
+  box-shadow: 0 4px 15px rgba(27, 94, 32, 0.05);
 }
 
 .section-header {
@@ -432,7 +432,7 @@
 .section-header h2 {
   margin: 0;
 
-  color: #183d2a;
+  color: #1b5e20;
 
   font-size: 20px;
 }
@@ -440,7 +440,7 @@
 .section-header p {
   margin: 5px 0 0;
 
-  color: #87949a;
+  color: #689f6b;
 
   font-size: 12px;
 }
@@ -461,7 +461,7 @@
 
   background: transparent;
 
-  color: #16834a;
+  color: #2e7d32;
 
   font-size: 12px;
 
@@ -471,7 +471,7 @@
 }
 
 .view-all-btn:hover {
-  color: #116b36;
+  color: #1b5e20;
 }
 
 
@@ -495,17 +495,17 @@
 
   padding: 14px 10px;
 
-  border-bottom: 1px solid #edf1ef;
+  border-bottom: 1px solid #e8f5e9;
 }
 
 .table-header {
-  background: #f8faf9;
+  background: #e8f5e9;
 
-  color: #718096;
+  color: #1b5e20;
 
   font-size: 12px;
 
-  font-weight: 600;
+  font-weight: 700;
 
   border-radius: 8px;
 }
@@ -513,7 +513,7 @@
 .table-row {
   min-height: 65px;
 
-  color: #52605a;
+  color: #37474f;
 
   font-size: 13px;
 }
@@ -523,7 +523,7 @@
 }
 
 .table-row:hover {
-  background: #fbfefc;
+  background: #f4fbf5;
 }
 
 
@@ -538,7 +538,7 @@
 
   gap: 10px;
 
-  color: #24352c;
+  color: #1b5e20;
 
   font-weight: 500;
 }
@@ -553,9 +553,9 @@
 
   border-radius: 8px;
 
-  background: #e9f9ef;
+  background: #e8f5e9;
 
-  color: #16834a;
+  color: #1b5e20;
 
   font-size: 13px;
 }
@@ -584,9 +584,9 @@
 }
 
 .status.completed {
-  background: #dcfce7;
+  background: #e8f5e9;
 
-  color: #16834a;
+  color: #1b5e20;
 }
 
 .status.pending {
@@ -609,7 +609,7 @@
 
   padding: 13px 0;
 
-  border-bottom: 1px solid #edf1ef;
+  border-bottom: 1px solid #e8f5e9;
 }
 
 .upcoming-task:last-of-type {
@@ -628,9 +628,9 @@
 
   border-radius: 9px;
 
-  background: #e9f9ef;
+  background: #e8f5e9;
 
-  color: #16834a;
+  color: #1b5e20;
 }
 
 .upcoming-task div:last-child {
@@ -640,7 +640,7 @@
 }
 
 .upcoming-task strong {
-  color: #263a30;
+  color: #1b5e20;
 
   font-size: 12px;
 }
@@ -648,7 +648,7 @@
 .upcoming-task span {
   margin-top: 4px;
 
-  color: #94a3a0;
+  color: #689f6b;
 
   font-size: 10px;
 }
@@ -671,13 +671,13 @@
 
   padding: 10px;
 
-  border: 1px solid #b9dfca;
+  border: 1px solid #c8e6c9;
 
   border-radius: 8px;
 
-  background: #f0fdf4;
+  background: #e8f5e9;
 
-  color: #16834a;
+  color: #1b5e20;
 
   font-size: 12px;
 
@@ -689,7 +689,7 @@
 }
 
 .all-tasks-btn:hover {
-  background: #16834a;
+  background: #2e7d32;
 
   color: white;
 }
@@ -721,13 +721,13 @@
 
   padding: 14px;
 
-  border: 1px solid #dfe9e3;
+  border: 1px solid #c8e6c9;
 
   border-radius: 10px;
 
-  background: #f8fbf9;
+  background: #e8f5e9;
 
-  color: #16834a;
+  color: #1b5e20;
 
   font-size: 13px;
 
@@ -743,9 +743,9 @@
 }
 
 .quick-action:hover {
-  background: #16834a;
+  background: #2e7d32;
 
-  border-color: #16834a;
+  border-color: #2e7d32;
 
   color: white;
 

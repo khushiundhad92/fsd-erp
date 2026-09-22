@@ -25,7 +25,6 @@ import EmployeeRegister from "./pages/employee/EmployeeRegister";
 import EmployeeLayout from "./pages/employee/EmployeeLayout";
 import EmployeeDashboard from "./pages/employee/EmployeeDashboard";
 import EmployeeMyWork from "./pages/employee/EmployeeMyWork";
-// import EmployeeAttendance from "./pages/employee/EmployeeAttendance";
 import EmployeeLeave from "./pages/employee/EmployeeLeave";
 import EmployeeSalary from "./pages/employee/EmployeeSalary";
 import EmployeeProfile from "./pages/employee/EmployeeProfile";
@@ -91,9 +90,17 @@ function ProtectedCustomer({ children }) {
   const loggedIn =
     localStorage.getItem("customerLoggedIn") === "true";
 
-  if (loggedIn) {
+  const token =
+    localStorage.getItem("customerToken") ||
+    localStorage.getItem("token") ||
+    localStorage.getItem("customerAuthToken");
+
+  if (loggedIn && token) {
     return children;
   }
+
+  localStorage.removeItem("customerLoggedIn");
+  localStorage.removeItem("customerUser");
 
   return (
     <Navigate
@@ -277,14 +284,6 @@ function App() {
           path="work"
           element={<EmployeeMyWork />}
         />
-
-
-        {/* ATTENDANCE */}
-
-        {/* <Route
-          path="attendance"
-          element={<EmployeeAttendance />}
-        /> */}
 
 
         {/* LEAVE */}

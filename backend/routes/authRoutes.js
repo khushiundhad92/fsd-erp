@@ -18,7 +18,7 @@ const createToken = (user) => {
       email: user.email,
       role: user.role,
     },
-    process.env.JWT_SECRET,
+    process.env.JWT_SECRET || "dairy_farm_jwt_secret_key_2026",
     {
       expiresIn: "7d",
     }

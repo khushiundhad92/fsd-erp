@@ -1,12 +1,11 @@
 import {
-  FaUserTie,
   FaTachometerAlt,
   FaBriefcase,
   FaMoneyBillWave,
   FaUser,
-  FaHeadset,
   FaSignOutAlt,
 } from "react-icons/fa";
+import { GiCow } from "react-icons/gi";
 
 import { NavLink, useNavigate } from "react-router-dom";
 
@@ -30,8 +29,6 @@ const EmployeeSidebar = ({ isOpen }) => {
       path: "/employee/work",
       icon: <FaBriefcase />,
     },
-    
-    
     {
       name: "Salary",
       path: "/employee/salary",
@@ -55,12 +52,12 @@ const EmployeeSidebar = ({ isOpen }) => {
       <div className="employee-sidebar-logo">
 
         <div className="employee-logo-icon">
-          <FaUserTie />
+          <GiCow />
         </div>
 
         <div className="employee-logo-text">
-          <strong>Employee Panel</strong>
-          <span>Dairy Farm Management</span>
+          <strong>Dairy Farm</strong>
+          <span>ERP System</span>
         </div>
 
       </div>
@@ -97,21 +94,6 @@ const EmployeeSidebar = ({ isOpen }) => {
 
       {/* FOOTER */}
       <div className="employee-sidebar-footer">
-
-        {/* SUPPORT */}
-        <div className="employee-support-box">
-
-          <div className="employee-support-icon">
-            <FaHeadset />
-          </div>
-
-          <div className="employee-support-text">
-            <strong>Need Help?</strong>
-            <span>Contact administrator</span>
-          </div>
-
-        </div>
-
 
         {/* LOGOUT */}
         <button

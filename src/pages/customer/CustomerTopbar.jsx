@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-
+import { NavLink } from "react-router-dom";
 import {
   FaUserCircle,
   FaBars,
+  FaShoppingCart,
 } from "react-icons/fa";
 
+import { getCustomerCart } from "../../api/customerApi";
 import "./CustomerTopbar.css";
 
 const CustomerTopbar = ({
@@ -22,34 +24,39 @@ const CustomerTopbar = ({
     }
   };
 
-  const [customer, setCustomer] =
-    useState(getCustomer());
+  const [customer, setCustomer] = useState(getCustomer());
+  const [cartCount, setCartCount] = useState(0);
+
+  const loadCartCount = async () => {
+    try {
+      const res = await getCustomerCart();
+      if (res?.cart?.items) {
+        const totalQty = res.cart.items.reduce(
+          (sum, item) => sum + Number(item.quantity || 1),
+          0
+        );
+        setCartCount(totalQty);
+      }
+    } catch (err) {
+      // Silent error if not logged in
+    }
+  };
 
   useEffect(() => {
     const updateCustomer = () => {
       setCustomer(getCustomer());
     };
 
-    window.addEventListener(
-      "customerProfileUpdated",
-      updateCustomer
-    );
+    loadCartCount();
 
-    window.addEventListener(
-      "storage",
-      updateCustomer
-    );
+    window.addEventListener("customerProfileUpdated", updateCustomer);
+    window.addEventListener("storage", updateCustomer);
+    window.addEventListener("cartUpdated", loadCartCount);
 
     return () => {
-      window.removeEventListener(
-        "customerProfileUpdated",
-        updateCustomer
-      );
-
-      window.removeEventListener(
-        "storage",
-        updateCustomer
-      );
+      window.removeEventListener("customerProfileUpdated", updateCustomer);
+      window.removeEventListener("storage", updateCustomer);
+      window.removeEventListener("cartUpdated", loadCartCount);
     };
   }, []);
 
@@ -85,30 +92,68 @@ const CustomerTopbar = ({
 
       </div>
 
-      {/* CUSTOMER PROFILE */}
+      <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
+        {/* CART BADGE */}
+        <NavLink
+          to="/customer/orders"
+          className="customer-topbar-cart-link"
+          title="View Shopping Cart"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+            background: "#ecfdf5",
+            color: "#166534",
+            padding: "8px 14px",
+            borderRadius: "20px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontSize: "13px",
+            border: "1px solid #bbf7d0",
+            transition: "all 0.2s ease",
+          }}
+        >
+          <FaShoppingCart style={{ fontSize: "16px" }} />
+          <span>Cart</span>
+          <span
+            style={{
+              background: "#166534",
+              color: "white",
+              borderRadius: "50%",
+              padding: "2px 7px",
+              fontSize: "11px",
+              fontWeight: "700",
+            }}
+          >
+            {cartCount}
+          </span>
+        </NavLink>
 
-      <div className="customer-topbar-profile">
+        {/* CUSTOMER PROFILE */}
 
-        <div className="customer-topbar-avatar">
-          <FaUserCircle />
-        </div>
+        <div className="customer-topbar-profile">
 
-        <div className="customer-topbar-user">
+          <div className="customer-topbar-avatar">
+            <FaUserCircle />
+          </div>
 
-          <strong>
-            {customerName}
-          </strong>
+          <div className="customer-topbar-user">
 
-          <span>
-            Customer
+            <strong>
+              {customerName}
+            </strong>
+
+            <span>
+              Customer
+            </span>
+
+          </div>
+
+          <span className="customer-topbar-arrow">
+            ▾
           </span>
 
         </div>
-
-        <span className="customer-topbar-arrow">
-          ▾
-        </span>
-
       </div>
 
     </header>
